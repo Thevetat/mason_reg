@@ -2313,12 +2313,7 @@ local function parseFunction(isLocal, isAction)
     local params
     if func.name and func.name.type == 'getmethod' then
         if func.name.type == 'getmethod' then
-            params = {
-                type   = 'funcargs',
-                start  = funcRight,
-                finish = funcRight,
-                parent = func
-            }
+            params = {}
             params[1] = createLocal {
                 start  = funcRight,
                 finish = funcRight,

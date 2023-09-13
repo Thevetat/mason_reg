@@ -1,13 +1,13 @@
-[23:36:34.674][info] [#0:/Users/thevetat/.local/share/nvim/mason/packages/lua-language-server/libexec/main.lua:66]: Lua Lsp startup, root: 	/Users/thevetat/.local/share/nvim/mason/packages/lua-language-server/libexec
-[23:36:34.675][info] [#0:/Users/thevetat/.local/share/nvim/mason/packages/lua-language-server/libexec/main.lua:67]: ROOT:	/Users/thevetat/.local/share/nvim/mason/packages/lua-language-server/libexec
-[23:36:34.675][info] [#0:/Users/thevetat/.local/share/nvim/mason/packages/lua-language-server/libexec/main.lua:68]: LOGPATH:	/Users/thevetat/.local/share/nvim/mason/packages/lua-language-server/libexec/log
-[23:36:34.675][info] [#0:/Users/thevetat/.local/share/nvim/mason/packages/lua-language-server/libexec/main.lua:69]: METAPATH:	/Users/thevetat/.local/share/nvim/mason/packages/lua-language-server/libexec/meta
-[23:36:34.675][info] [#0:/Users/thevetat/.local/share/nvim/mason/packages/lua-language-server/libexec/main.lua:70]: VERSION:	3.6.23
-[23:36:34.698][info] [#0:script/service/service.lua:144]: 
+[00:15:23.760][info] [#0:/home/dean/.local/share/nvim/mason/packages/lua-language-server/libexec/main.lua:66]: Lua Lsp startup, root: 	/home/dean/.local/share/nvim/mason/packages/lua-language-server/libexec
+[00:15:23.760][info] [#0:/home/dean/.local/share/nvim/mason/packages/lua-language-server/libexec/main.lua:67]: ROOT:	/home/dean/.local/share/nvim/mason/packages/lua-language-server/libexec
+[00:15:23.760][info] [#0:/home/dean/.local/share/nvim/mason/packages/lua-language-server/libexec/main.lua:68]: LOGPATH:	/home/dean/.local/share/nvim/mason/packages/lua-language-server/libexec/log
+[00:15:23.760][info] [#0:/home/dean/.local/share/nvim/mason/packages/lua-language-server/libexec/main.lua:69]: METAPATH:	/home/dean/.local/share/nvim/mason/packages/lua-language-server/libexec/meta
+[00:15:23.760][info] [#0:/home/dean/.local/share/nvim/mason/packages/lua-language-server/libexec/main.lua:70]: VERSION:	3.6.22
+[00:15:23.785][info] [#0:script/service/service.lua:144]: 
 ========= Medical Examination Report =========
     --------------- Memory ---------------
-        Total: 1.319 MB
-        # 00 : 1.319 MB
+        Total: 1.318 MB
+        # 00 : 1.318 MB
         # 01 : 0.000 MB
         # 02 : 0.000 MB
         # 03 : 0.000 MB
@@ -25,10 +25,10 @@
         Holdon:   0
         Waiting:  0
 ==============================================
-[23:36:34.702][info] [#0:script/client.lua:657]: Client init	{
+[00:15:23.789][info] [#0:script/client.lua:657]: Client init	{
   capabilities = {
     general = {
-      positionEncodings = { "utf-16" }
+      positionEncodings = { "utf-8", "utf-16", "utf-32" }
     },
     textDocument = {
       callHierarchy = {
@@ -103,12 +103,6 @@
       implementation = {
         linkSupport = true
       },
-      inlayHint = {
-        dynamicRegistration = true,
-        resolveSupport = {
-          properties = {}
-        }
-      },
       publishDiagnostics = {
         relatedInformation = true,
         tagSupport = {
@@ -179,9 +173,6 @@
         dynamicRegistration = true,
         relativePatternSupport = true
       },
-      inlayHint = {
-        refreshSupport = true
-      },
       semanticTokens = {
         refreshSupport = true
       },
@@ -200,19 +191,19 @@
   },
   clientInfo = {
     name = "Neovim",
-    version = "0.10.0-dev+Homebrew"
+    version = "0.10.0"
   },
   initializationOptions = {},
-  processId = 31738,
-  rootPath = "/Users/thevetat/.config/nvim",
-  rootUri = "file:///Users/thevetat/.config/nvim",
+  processId = 111061,
+  rootPath = "/home/dean/.config/nvim",
+  rootUri = "file:///home/dean/.config/nvim",
   trace = "off",
   workspaceFolders = { {
-      name = "/Users/thevetat/.config/nvim",
-      uri = "file:///Users/thevetat/.config/nvim"
+      name = "/home/dean/.config/nvim",
+      uri = "file:///home/dean/.config/nvim"
     } }
 }
-[23:36:34.702][info] [#0:script/language.lua:137]: VSC language: nil
-[23:36:34.702][info] [#0:script/language.lua:138]: LS  language: en-us
-[23:36:34.702][info] [#0:script/workspace/workspace.lua:38]: Workspace init root: 	file:///Users/thevetat/.config/nvim
-[23:36:34.702][info] [#0:script/workspace/workspace.lua:42]: Log path: 	/Users/thevetat/.local/share/nvim/mason/packages/lua-language-server/libexec/log/file_Users_thevetat_.config_nvim.log
+[00:15:23.789][info] [#0:script/language.lua:137]: VSC language: nil
+[00:15:23.789][info] [#0:script/language.lua:138]: LS  language: en-us
+[00:15:23.789][info] [#0:script/workspace/workspace.lua:38]: Workspace init root: 	file:///home/dean/.config/nvim
+[00:15:23.789][info] [#0:script/workspace/workspace.lua:42]: Log path: 	/home/dean/.local/share/nvim/mason/packages/lua-language-server/libexec/log/file_home_dean_.config_nvim.log

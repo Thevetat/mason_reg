@@ -38,9 +38,8 @@ end
 
 local function checkFunction(source, callback, commentId, paramId, returnId)
     local functionName = source.parent[1]
-    local argCount = source.args and #source.args or 0
 
-    if argCount == 0 and not source.returns and not source.bindDocs then
+    if #source.args == 0 and not source.returns and not source.bindDocs then
         callback {
             start   = source.start,
             finish  = source.finish,
@@ -48,11 +47,10 @@ local function checkFunction(source, callback, commentId, paramId, returnId)
         }
     end
 
-    if argCount > 0 then
+    if #source.args > 0 then
         for _, arg in ipairs(source.args) do
             local argName = arg[1]
-            if  argName ~= 'self'
-            and argName ~= '_' then
+            if argName ~= 'self' then
                 if not findParam(source.bindDocs, argName) then
                     callback {
                         start   = arg.start,
